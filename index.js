@@ -1,7 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const sslRedirect = require('heroku-ssl-redirect'); 
 
 const app = express();
+
+// enable ssl redirect
+app.use(sslRedirect());
 
 app.use(bodyParser.json());
 
