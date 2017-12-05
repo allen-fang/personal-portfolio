@@ -1,0 +1,161 @@
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.home-header-wrapper {
+	height: 5vh;
+	position: relative;
+	padding: 100px 0;
+}
+
+
+.home-header-content {
+	width: 75%;
+	max-width: 1024px;
+	margin: 0 auto;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.home-header-content-left {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.home-header-content-left > * {
+	color: white;
+}
+
+.home-header-content-name {
+	margin: 0;
+	margin-bottom: 5px;
+	color: white;
+	font-size: 3.5em;
+	animation-duration: 0.8s;
+}
+
+.home-header-content-title {
+	opacity: 0;
+	margin: 0;
+	font-size: 1em;
+	animation-delay: 0.3s;
+	animation-duration: 0.8s;
+}
+
+.home-header-content-right {
+	width: 42%;
+}
+
+.icons-list {
+	display: flex;
+	justify-content: space-around;
+}
+
+.icon {
+	width: 33%;
+	margin-right: 5px;
+	color: white;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	animation-duration: 0.8s;
+}
+
+.icon-text {
+	margin-left: 5px;
+	font-size: 0.8em;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.linkedin-icon-text {
+	opacity: 0;
+}
+
+.resume-icon {
+	
+}
+
+.linkedin-icon {
+	opacity: 0;
+	animation-delay: 0.3s;
+}
+
+.linkedin-icon-text {
+	animation-play-state:paused;
+
+}
+
+.github-icon {
+	opacity: 0;
+	animation-delay: 0.6s;
+}
+
+.resume-icon:hover .resume-icon-text {
+	opacity: 1;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.linkedin-icon:hover .linkedin-icon-text {
+	opacity: 1;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.github-icon:hover .github-icon-text {
+	opacity: 1;
+	transition: opacity 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+} 
+
+@keyframes fadeInLeft {
+   0% {
+      opacity: 0;
+      transform: translateX(-5px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+} 
+
+@keyframes fadeInDown {
+   0% {
+      opacity: 0;
+      transform: translateY(-10px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}   
+
+.fadeInDown {
+	animation-name: fadeInDown;
+	animation-fill-mode: forwards;
+}
+
+.fadeInLeft {
+	animation-name: fadeInLeft;
+	animation-fill-mode: forwards;
+}
+
+.fadeIn {
+	animation-name: fadeIn;
+	animation-fill-mode: forwards;
+}
+
+
+
+

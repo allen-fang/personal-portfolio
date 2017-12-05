@@ -1,0 +1,67 @@
+input, button, submit {
+	border: none;
+}
+
+.input-field {
+	padding: 10px 10px;
+	font-size: 1em;
+	background-color: #DEE0E3;
+	border: 1px #f4f4f4 solid;
+	border-radius: 4px;
+}
+
+.input-row {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+
+.name-field, .email-field {
+	width: 45%;
+}
+
+.subject-field, .message-field {
+	width: 100%;
+}
+
+.message-field {
+	height: 80px;
+}
+
+.input-btn {
+	display: flex;
+	justify-content: center;
+}
+
+.submit-btn {
+	margin-top: 10px;
+	padding: 10px ;
+	cursor: pointer;
+	border-radius: 20px;
+	font-size: 0.8em;
+	font-weight: bold;
+	color: #f4f4f4;
+	background-color: #35373B;
+}
+
+.disabled-btn {
+	margin-top: 10px;
+	padding: 10px ;
+	cursor: pointer;
+	border-radius: 20px;
+	font-size: 0.8em;
+	font-weight: bold;
+	background-color: #DFDFDF;
+	color: #c9c9c9;
+}
+
+.error-field {
+	border: 1px red solid;
+}
+
+.message-sent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

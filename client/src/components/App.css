@@ -1,0 +1,9 @@
+.wrapper {
+	padding: 0;
+	margin: 0 auto;
+}
+
+img {
+	max-height: 100%;
+	max-width: 100%;
+}

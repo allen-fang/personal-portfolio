@@ -1,0 +1,50 @@
+.contact-tab-wrapper {
+	padding: 50px;
+}
+
+.about-content {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 50px;
+}
+
+.profile-image {
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.about-text {
+	width: 70%;
+}
+
+.about-text > p {
+	line-height: 1.5;
+}
+
+.contact-tab-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact-tab-left,
+.contact-tab-right {
+	width: 45%;
+}
+
+.connect-links {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.connect-links > a {
+	text-decoration: none;
+	margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+}
+
+.connect-links > a > span {
+	margin-left: 30px;
+}

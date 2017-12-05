@@ -1,0 +1,184 @@
+.tabs-wrapper {
+	margin: 0 auto;
+}
+
+.tabs-list {
+	position: relative;
+	list-style: none;
+	padding: 0;
+	width: 100%;
+	margin: 0 auto;
+	height: 60px;
+	z-index: 10;
+}
+
+
+.tab-one,
+.tab-two {
+	width: 50%;
+	cursor: pointer;
+	padding: 20px 0;
+	margin-bottom: 15px;
+}
+
+.tab-three {
+	width: 34%;
+	cursor: pointer;
+	padding: 20px 0;
+	margin-bottom: 15px;
+}
+
+.tabs-list .tabs {
+	display: inline-block;
+	text-align: center;
+}
+
+.tabs-list > li {
+	color: white;
+}
+
+.tab-one.active {
+	color: black;
+	transition: 0.5s ease-in-out;
+}
+
+.tab-two.active {
+	color: black;
+	transition: 0.5s ease-in-out;
+}
+
+.tab-three.active {
+	color: black;
+	transition: 0.5s ease-in-out;
+}
+
+.tab-one.active ~ .slider {
+	margin-left: 0;
+}
+
+.tab-two.active ~ .slider {
+	margin-left: 50%;
+}
+
+.tab-three.active ~ .slider {
+	margin-left: 67%;
+}
+
+.slider {
+	position: absolute;
+	bottom: 0;
+	height: 100%;
+	width: 50%;
+	margin: 0;
+	background: #f2f2f2;
+	border: none;
+	transition: 0.5s ease-in-out;
+	z-index: -1;
+}
+
+.tab-content-wrapper {
+	background: #f2f2f2;
+	max-width: 100%;
+	margin-bottom: 60px;
+}
+
+.sticky-header {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	background: #45484d; /* Old browsers */
+	background: -moz-linear-gradient(
+		-45deg,
+		#45484d 0%,
+		#000000 100%
+	); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		-45deg,
+		#45484d 0%,
+		#000000 100%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		135deg,
+		#45484d 0%,
+		#000000 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(
+			startColorstr="#45484d",
+			endColorstr="#000000",
+			GradientType=1
+		); /* IE6-9 fallback on horizontal gradient */
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	opactiy: 0;
+	transition: opacity 1s ease-in-out;
+	z-index:10;
+}
+
+.sticky-header-left {
+	display: flex;
+	width: 40%;
+}
+
+.sticky-header-logo {
+	width: 160px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.logo {
+	border: 2px #f2f2f2 solid;
+	border-radius: 5px;
+	padding: 10px 15px;
+}
+
+.tabs-list-sticky {
+	display: inline-block;
+	margin: 0;
+	position: relative;
+	list-style: none;
+	padding: 0;
+	width: 90%;
+	height: 60px;
+	z-index: 10;
+}
+
+.tabs-list-sticky > li {
+	color: white;
+}
+
+.tab-sticky {
+	display: inline-block;
+	text-align: center;
+}
+
+.sticky-header-right {
+	width: 210px;
+	display: flex;
+	justify-content: center;
+}
+
+.sticky-header-right > a {
+	color: white;
+}
+
+.icon-sticky {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	text-decoration: none;
+	transition: all .2s ease-in-out;
+}
+
+.icon-sticky:hover {
+	transform: scale(2);
+}
+
+
+
