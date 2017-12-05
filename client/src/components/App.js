@@ -10,10 +10,18 @@ import ReactFlashcards from './About/ReactFlashcards/ReactFlashcards';
 import RestaurantRoulette from './About/RestaurantRoulette/RestaurantRoulette';
 import RoadTripPlanner from './About/RoadTripPlanner/RoadTripPlanner';
 
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-105227083-2');
+
+
+
 class App extends Component {
+  fireTracking = () => {
+    ReactGA.pageview(window.location.hash);
+  }
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter onUpdate={this.fireTracking}>
         <div className="wrapper">
           <Route exact path="/" component={Home} />
           <Route path="/about/jobhub" component={JobHub} />
