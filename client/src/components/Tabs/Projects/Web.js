@@ -28,7 +28,7 @@ const Web = () => {
 				<div className="project-description">
 					<h2>
 						<a
-							href="https://pure-everglades-51474.herokuapp.com"
+							href="https://job-hub.herokuapp.com/"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
@@ -42,7 +42,7 @@ const Web = () => {
 					<div className="project-links">
 						<a
 							className="project-link-btn"
-							href="https://pure-everglades-51474.herokuapp.com"
+							href="https://job-hub.herokuapp.com/"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
