@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import "./Tabs.css";
-import { StickyContainer, Sticky } from "react-sticky";
-import scrollToComponent from "react-scroll-to-component";
+import React, { Component } from 'react';
+import './Tabs.css';
+import { StickyContainer, Sticky } from 'react-sticky';
+import scrollToComponent from 'react-scroll-to-component';
 
-import Projects from "../Tabs/Projects";
-import Contact from "../Tabs/Contact";
+import Projects from '../Tabs/Projects';
+import Contact from '../Tabs/Contact';
 
 class Tabs extends Component {
 	state = { activeTab: 1 };
@@ -32,7 +32,7 @@ class Tabs extends Component {
 	};
 	render() {
 		return (
-			<StickyContainer style={{ height: "auto" }}>
+			<StickyContainer style={{ height: 'auto' }}>
 				<div
 					ref={div => {
 						this.Top = div;
@@ -67,14 +67,14 @@ class Tabs extends Component {
 														this.changeTab(1);
 														scrollToComponent(this.Top, {
 															offset: 10,
-															align: "top",
+															align: 'top',
 															duration: 800
 														});
 													}}
 													className={`tab-one tab-sticky ${this.state
 														.activeTab === 1
-														? "active"
-														: ""}`}
+														? 'active'
+														: ''}`}
 												>
 													<i className="fa fa-folder" />
 												</li>
@@ -83,14 +83,14 @@ class Tabs extends Component {
 														this.changeTab(2);
 														scrollToComponent(this.Top, {
 															offset: 10,
-															align: "top",
+															align: 'top',
 															duration: 800
 														});
 													}}
 													className={`tab-two tab-sticky ${this.state
 														.activeTab === 2
-														? "active"
-														: ""}`}
+														? 'active'
+														: ''}`}
 												>
 													<i className="fa fa-envelope" />
 												</li>
@@ -98,7 +98,11 @@ class Tabs extends Component {
 											</ul>
 										</div>
 										<div className="sticky-header-right">
-											<a href="" target="_blank" className="icon-sticky">
+											<a
+												href={require('../../assets/AllenFangResume.pdf')}
+												target="_blank"
+												className="icon-sticky"
+											>
 												<i className="fa fa-file-text" />
 											</a>
 											<a
@@ -128,8 +132,8 @@ class Tabs extends Component {
 											this.changeTab(1);
 										}}
 										className={`tabs tab-one ${this.state.activeTab === 1
-											? "active"
-											: ""}`}
+											? 'active'
+											: ''}`}
 									>
 										<b>PROJECTS</b>
 									</li>
@@ -138,8 +142,8 @@ class Tabs extends Component {
 											this.changeTab(2);
 										}}
 										className={`tabs tab-two ${this.state.activeTab === 2
-											? "active"
-											: ""}`}
+											? 'active'
+											: ''}`}
 									>
 										<b>ABOUT/CONTACT</b>
 									</li>
