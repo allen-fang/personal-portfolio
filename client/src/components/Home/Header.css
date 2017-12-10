@@ -5,7 +5,7 @@ a {
 
 .home-header-wrapper {
 	height: 5vh;
-	position: relative;
+/*	position: relative;*/
 	padding: 100px 0;
 }
 
@@ -154,6 +154,54 @@ a {
 .fadeIn {
 	animation-name: fadeIn;
 	animation-fill-mode: forwards;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.home-header-wrapper {
+		padding: 50px 0;
+		height: 35vh;
+	}
+
+	.home-header-content {
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+	}
+	
+
+	.home-header-content-right, .home-header-content-left {
+		margin: 0 auto;
+		width: 100%;
+		display: flex;
+	}
+
+	.home-header-content-left {
+		align-items: center;
+		margin-bottom: 20px;
+	}
+
+	.home-header-content-right {
+		justify-content: center;
+
+	}
+
+	.icons-list {
+		flex-direction: column;
+	}
+
+	.icon-text {
+		opacity: 1;
+	}
+
+	.icon {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.icon-text {
+		margin-left: 10px;
+	}
 }
 
 

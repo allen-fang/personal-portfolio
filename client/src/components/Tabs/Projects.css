@@ -12,7 +12,6 @@
 	height: 60px;
 	padding-top: 30px;
 	margin-bottom: 30px;
-
 }
 
 .tab-label {
@@ -59,12 +58,7 @@
 	align-items: center;
 }
 
-.separator {
-	margin: 0 auto;
-	background-image: url("../../images/separator.png");
-	height: 9px;
-	width: 576px;
-}
+
 
 .project-cards {
 	width: 100%;
@@ -79,13 +73,8 @@
 
 .project-image {
 	display: flex;
-	justify-content: flex-end;
-}
-
-.project-image > img {
-	width: 100%;
-	height: auto;
-	object-fit: cover;
+	justify-content: center;
+	width: 50%;
 }
 
 .project-description {
@@ -142,4 +131,51 @@
 	margin-bottom: 5px;
 }
 
+@media only screen and (max-width: 760px) {
+	.tab-selector {
+		width: 100%;
+	}
+
+	.tab-wrapper {
+		width: 80%;
+	}
+
+	.project-card {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.project-card > div {
+		width: 100%;
+	}
+
+	.project-description {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.project-description > h2 {
+		margin: 0;
+	}
+
+	.project-description > p {
+		text-align: center;
+	}
+
+	.project-link-btn {
+		height: 15px;
+		font-size: 0.7em;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+
+	.separator {
+		margin: 0 auto;
+		background-image: url("../../images/separator.png");
+		height: 9px;
+		width: 576px;
+	}
+}
 

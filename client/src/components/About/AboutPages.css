@@ -42,7 +42,6 @@ img {
 	height: auto;
 }
 
-
 .image-section {
 	width: 100%;
 	display: flex;
@@ -64,7 +63,7 @@ img {
 
 .image-section-row {
 	display: flex;
-	justify-content: center
+	justify-content: center;
 }
 
 .image-section-row > div {
@@ -175,4 +174,84 @@ img {
 	margin-bottom: 6px;
 }
 
+@media only screen and (max-width: 767px) {
+	.section {
+		display: block;
+		flex-direction: column;
+		padding: 25px 25px 0 25px;
+	}
 
+	.about-content-header {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.about-content-header > div {
+		width: 100%;
+	}
+
+	.project-intro > h1 {
+		text-align: center;
+	}
+
+	.content-section > div {
+		width: 100%;
+	}
+
+	.content-section > h2 {
+		text-align: center;
+	}
+
+	.image-section {
+		flex-direction: column;
+	}
+
+	.gallery-column {
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.gallery-image-web {
+		width: 90%;
+	}
+
+	.gallery-image-landscape {
+		width: 90%;
+	}
+
+	.image-section-row {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.image-section-row > div {
+		margin: 0;
+		width: 100%;
+	}
+
+	.more-projects {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 15px;
+	}
+
+	.image-section-house-planner {
+		flex-direction: column;
+	}
+
+	.gallery-image-web {
+		margin: 0;
+		width: 100%;
+	}
+
+	.video-section {
+		display: none;
+	}
+
+	.gallery-image-mobile {
+		display: flex;
+		justify-content: center;
+	}
+}

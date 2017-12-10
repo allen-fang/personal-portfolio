@@ -48,3 +48,37 @@
 .connect-links > a > span {
 	margin-left: 30px;
 }
+
+@media only screen and (max-width: 767px) {
+	.contact-tab-wrapper {
+		padding: 25px;
+	}
+
+	.about-wrapper > h2 {
+		text-align: center;
+	}
+
+	.about-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.about-text {
+		width: 90%;
+	}
+
+	.contact-tab-content {
+		flex-direction: column-reverse;
+	}
+
+	.contact-tab-left,
+	.contact-tab-right {
+		width: 100%;
+	}
+
+	.contact-tab-left > h2,
+	.contact-tab-right >h2 {
+		text-align: center;
+	}
+}
