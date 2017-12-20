@@ -22,7 +22,7 @@ const Contact = () => {
 						computer science classes and ended up pursuing the subject after
 						graduation. Since then I have explored several technologies behind
 						both web and app development. I've built several applications to
-						boost producivity and solve problems in every day life.</p>
+						boost productivity and solve problems in every day life.</p>
 					</div>
 				</div>
 			</div>
