@@ -1,3 +1,5 @@
+// mailer for contact page
+
 const nodemailer = require('nodemailer');
 const keys = require('../config/keys');
 
